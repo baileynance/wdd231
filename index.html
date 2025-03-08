@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development I - Bailey Nance</title>
+    <meta name="description"
+        content="WDD 231 - Web frontend development home page by Bailey Nance. The first assignment in week 1 for WDD 231.">
+    <meta name="author" title content="Bailey Nance">
+    <link href="styles/base.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/profile-photo.jpg" alt="Profile Photo">
+            <h1>Bailey Nance</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Chamber</a></li>
+                <li><a href="https://github.com/baileynance">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/bailey-nance-b864b1243/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div>
+            <section class="card">
+                <h3>Course Work</h2>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+            </section>
+            <section class="card">
+                <h3>Washington, USA</h2>
+                <img src="images/wa-state-capital.jpg" alt="Washington State Capital">
+                <p>Washington State Capital Building</p>
+            </section>
+            <section class="card">
+                <h3>Web and Computer Programming Certificate</h2>
+                <div id="class-selector">
+                    <button id="all-classes">All</button>
+                    <button id="cse-classes">CSE</button>
+                    <button id="wdd-classes">WDD</button>
+                </div>
+                <ul id="courses"></ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Bailey Nance | Oregon</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courseList.js" defer></script>
+</body>
+
+</html>
