@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -79,53 +79,50 @@ const courses = [
 ]
 
 const courseSection = document.getElementById("courses");
+const creditCount = document.getElementById("credit-count");
 
-// Run default display upon loading wedpage
-courses.forEach(function(course) {
+// Define a function for displaying a course list
+const displayList = (courses) => {
+    courses.forEach(function(course) {
     const li = document.createElement('li');
     const button = document.createElement('button');
     button.textContent = `${course.subject} ${course.number}`;
     li.appendChild(button);
     courseSection.appendChild(li);
-})
+    })
+}
+
+const displayCredits = (courses) => {
+    creditCount.innerHTML = ``;
+    const totalCompletedCredits = courses.reduce((total, course) => {
+    return course.completed ? total + course.credits : total;
+    }, 0);
+    creditCount.textContent = totalCompletedCredits;
+}
+
+// Run default display upon loading wedpage
+displayList(courses);
+displayCredits(courses);
 
 // Switch display to all classes when clicked
 const allClassesSelector = document.getElementById("all-classes");
 allClassesSelector.addEventListener("click", function() {
     courseSection.innerHTML = ``;
-    courses.forEach(function(course) {
-    const li = document.createElement('li');
-    const button = document.createElement('button');
-    button.textContent = `${course.subject} ${course.number}`;
-    li.appendChild(button);
-    courseSection.appendChild(li);
-    })
+    displayList(courses);
 })
 
+// Switch display to all CSE classes when clicked
 const cseClassesSelector = document.getElementById("cse-classes");
 cseClassesSelector.addEventListener("click", function() {
     courseSection.innerHTML = ``;
-    courses.forEach(function(course) {
-        if (course.subject == "CSE") {
-            const li = document.createElement('li');
-            const button = document.createElement('button');
-            button.textContent = `${course.subject} ${course.number}`;
-            li.appendChild(button);
-            courseSection.appendChild(li);
-        }
-    })
+    const cseCourses = courses.filter(course => course.subject == "CSE");
+    displayList(cseCourses);
 })
 
+// Switch display to all WDD classes when clicked
 const wddClassesSelector = document.getElementById("wdd-classes");
 wddClassesSelector.addEventListener("click", function() {
     courseSection.innerHTML = ``;
-    courses.forEach(function(course) {
-    if (course.subject == "WDD") {
-            const li = document.createElement('li');
-            const button = document.createElement('button');
-            button.textContent = `${course.subject} ${course.number}`;
-            li.appendChild(button);
-            courseSection.appendChild(li);
-        }
-    })
+    const wddCourses = courses.filter(course => course.subject == "WDD");
+    displayList(wddCourses);
 })
