@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Chamber Directory Page</title>
+    <meta name="description" content="WDD 231 - Web frontend development chamber directory by Bailey Nance. Week 2 assignment for WDD 231.">
+    <meta name="author" title content="Bailey Nance">
+    <meta property="og:title" content="WDD 231 - Web Frontent Development Chamber Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRkPforHhF4AwmhYeZvq8n6GDKbEBaq7STvgSDcuUoTl1H1NaAP3ivAfPWxRW5isJT_lw_h5hvHX_Smj5RpqeZK-nTkBCWM9DhyXNE-tA">
+    <meta property="og:url" content="https://baileynance.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/directory.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Olympia Chamber of Commerce</h1>
+        <img>
+        <nav>
+            <ul id="nav"></ul>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <h2>Directory</h2>
+            <button id="grid-view">Grid</button>
+            <button id="list-view">List</button>
+            <ul id="companies"></ul>
+        </main>
+    </body>
+    <footer>
+        <section>
+            <p>Olympia Chamber of Commerce</p>
+            <p>Washington State Capitol Building and Campus</p>
+            <p>416 Sid Snyder Ave SW, Olympia, WA 98504</p>
+            <p>contactus@wa.gov</p>
+            <p>(360) 902-8880</p>
+        </section>
+        <section>
+            <a href="#"><img src="images/youtube-icon.png" alt="Youtube Icon"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter Icon"></a>
+            <a href="#"><img src="images/linkedin-icon.webp" alt="LinkedIn Icon"></a>
+        </section>
+        <section>
+            <p>WDD231 Class Project</p>
+            <p>Bailey Nance</p>
+            <p>&copf; <span id="currentyear"></span> Olympia Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</body>
+</html>
