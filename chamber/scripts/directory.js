@@ -9,9 +9,6 @@ nav.innerHTML = `
     <li>Discover</li>
 `;
 
-const gridView = document.getElementById("grid-view");
-const listView = document.getElementById("list-view");
-
 const companies = document.getElementById("company-list");
 
 const displayCompanies = (data) => {
@@ -21,18 +18,17 @@ const displayCompanies = (data) => {
         const phoneNumber = company.phoneNumber;
         const url = company.url;
         const image = company.image;
-        const membership = company.membership;
+        //const membership = company.membership;
         const other = company.other;
 
         const li = document.createElement("li");
         li.innerHTML = `
         <h3>${name}</h3>
-        <p>${address}</p>
-        <p>${phoneNumber}</p>
-        <a href="${url}" target="_blank">${url}</a>
+        <p class="catchphrase">${other}</p>
+        <p class="address">ADDRESS: ${address}</p>
+        <p class="phone-number">PHONE: ${phoneNumber}</p>
+        <a href="${url}" target="_blank" class="url">URL: ${url}</a>
         <img src="${image}">
-        <p>${membership}</p>
-        <p>${other}</p>
         `;
 
         companies.appendChild(li);
@@ -46,3 +42,16 @@ async function getCompanies() {
 }
 
 getCompanies();
+
+const gridView = document.getElementById("grid-view");
+const listView = document.getElementById("list-view");
+
+gridView.addEventListener("click", function() {
+    companies.classList.remove("list");
+    companies.classList.add("grid");
+})
+
+listView.addEventListener("click", function() {
+    companies.classList.remove("grid");
+    companies.classList.add("list");
+})
