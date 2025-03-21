@@ -78,6 +78,9 @@ const courses = [
     }
 ]
 
+document.getElementById('lastModified').innerText = new Date(document.lastModified);
+document.getElementById('currentyear').innerText = new Date().getFullYear();
+
 const courseSection = document.getElementById("courses");
 const creditCount = document.getElementById("credit-count");
 
@@ -87,6 +90,11 @@ const displayList = (courses) => {
     const li = document.createElement('li');
     const button = document.createElement('button');
     button.textContent = `${course.subject} ${course.number}`;
+    if (course.completed == true) {
+        button.classList.add("completed");
+    } else {
+        button.classList.add("not-completed");
+    }
     li.appendChild(button);
     courseSection.appendChild(li);
     })
@@ -125,4 +133,11 @@ wddClassesSelector.addEventListener("click", function() {
     courseSection.innerHTML = ``;
     const wddCourses = courses.filter(course => course.subject == "WDD");
     displayList(wddCourses);
+})
+
+
+const navButton = document.getElementById("nav-button");
+const navList = document.getElementById("nav-list");
+navButton.addEventListener("click", function() {
+    navList.classList.toggle("show");
 })
