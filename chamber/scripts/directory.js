@@ -9,8 +9,17 @@ nav.innerHTML = `
     <li>Discover</li>
 `;
 
-const companies = document.getElementById("company-list");
+const navButton = document.getElementById("nav-button");
+navButton.addEventListener("click", function() {
+    nav.classList.toggle("show");
+    if (navButton.textContent == "☰") {
+        navButton.textContent = "-";
+    } else if (navButton.textContent == "-") {
+        navButton.textContent = "☰";
+    }
+})
 
+const companies = document.getElementById("company-list");
 const displayCompanies = (data) => {
     data.forEach(company => {
         const name = company.name;
@@ -45,12 +54,10 @@ getCompanies();
 
 const gridView = document.getElementById("grid-view");
 const listView = document.getElementById("list-view");
-
 gridView.addEventListener("click", function() {
     companies.classList.remove("list");
     companies.classList.add("grid");
 })
-
 listView.addEventListener("click", function() {
     companies.classList.remove("grid");
     companies.classList.add("list");

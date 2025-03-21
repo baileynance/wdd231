@@ -46,12 +46,6 @@ nav {
     width: 100%;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: right;
-}
-
 nav li {
     color: var(--white);
     padding: 1rem;
@@ -168,6 +162,24 @@ footer section {
 
 footer section img {
     height: 4rem;
+    margin: 1rem;
+}
+
+footer section:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: right;
+    }
+
+    #nav-button {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -176,9 +188,24 @@ footer section img {
     }
 
     nav ul {
-        display: flex;
+        display: none;
         flex-direction: column;
         margin-left: -2.5rem;
         width: 100%;
+        margin-top: 1rem;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    button {
+        display: flex;
+        justify-self: right;
+        margin: 1rem;
+        background-color: var(--black);
+        color: var(--white);
+        border: 1px solid var(--black);
+        border-radius: 4px;
     }
 }
