@@ -60,7 +60,7 @@ nav {
 
 nav li:hover {
     background-color: var(--alternativethemecolor);
-    color: var(black);
+    color: var(--black);
 }
 
 nav a {
@@ -201,7 +201,7 @@ footer {
 }
 
 footer p:last-child {
-    color: var(--black);
+    color: var(--white);
 }
 
 @media only screen and (min-width: 700px) {
