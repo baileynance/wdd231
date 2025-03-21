@@ -37,7 +37,7 @@ const displayCompanies = (data) => {
         <p class="address">ADDRESS: ${address}</p>
         <p class="phone-number">PHONE: ${phoneNumber}</p>
         <a href="${url}" target="_blank" class="url">URL: ${url}</a>
-        <img src="${image}">
+        <img src="${image}" alt="${name} Image">
         `;
 
         companies.appendChild(li);
