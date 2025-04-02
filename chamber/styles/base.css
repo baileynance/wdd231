@@ -102,20 +102,12 @@ main {
     left: 48%;
     font-size: 1rem;
     background-color: var(--black);
+    padding: 0.5rem;
+    color: var(--white);
     border-radius: 5px;
 }
 
 .hero-button:hover {
-    background-color: var(--white);
-    color: var(--black);
-}
-
-#join-button {
-    text-decoration: none;
-    color: var(--white);
-}
-
-#join-button:hover {
     background-color: var(--white);
     color: var(--black);
 }
