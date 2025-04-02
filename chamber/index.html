@@ -31,53 +31,51 @@
             <ul id="nav"></ul>
         </nav>
     </header>
-    <body>
-        <main>
-            <div class="hero-container">
-                <picture id="hero-image">
-                    <source srcset="images/olympia-hero-small.webp" media="(max-width: 600px)">
-                    <source srcset="images/olympia-hero-medium.webp" media="(max-width: 1200px)">
-                    <img src="images/olympia-hero-large.webp" alt="Olympia Hero Image">
-                </picture>
-                <button class="hero-button"><a href="join.html" id="join-button">Join</a></button>
+    <main>
+        <div class="hero-container">
+            <picture id="hero-image">
+                <source srcset="images/olympia-hero-small.webp" media="(max-width: 600px)">
+                <source srcset="images/olympia-hero-medium.webp" media="(max-width: 1200px)">
+                <img src="images/olympia-hero-large.webp" alt="Olympia Hero Image">
+            </picture>
+            <button class="hero-button"><a href="join.html" id="join-button">Join</a></button>
+        </div>
+        <h2>Home</h2>
+        <section id="home-events">
+            <div id="events">
+                <h3>Events</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
-            <h2>Home</h2>
-            <section id="home-events">
-                <div id="events">
-                    <h3>Events</h3>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+            <div id="weather">
+                <h3>Current Weather</h3>
+                <div id="weather-container">
+                    <img id="icon">
+                    <p><strong><span id="temperature"></span></strong> °F</p>
+                    <p><span id="weather-desc"></span></p>
+                    <p>High: <span id="high-temp"></span> °F</p>
+                    <p>Low: <span id="low-temp"></span> °F</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Sunrise: <span id="sunrise"></span></p>
+                    <p>Sunset: <span id="sunset"></span></p>
                 </div>
-                <div id="weather">
-                    <h3>Current Weather</h3>
-                    <div id="weather-container">
-                        <img id="icon">
-                        <p><strong><span id="temperature"></span></strong> °F</p>
-                        <p><span id="weather-desc"></span></p>
-                        <p>High: <span id="high-temp"></span> °F</p>
-                        <p>Low: <span id="low-temp"></span> °F</p>
-                        <p>Humidity: <span id="humidity"></span>%</p>
-                        <p>Sunrise: <span id="sunrise"></span></p>
-                        <p>Sunset: <span id="sunset"></span></p>
-                    </div>
+            </div>
+            <div id="weather-forecast">
+                <h3>Weather Forecast</h3>
+                <div id="forecast-container">
+                    <p>Today: <strong><span id="today"></span> °F</strong></p>
+                    <p>Tomorrow: <strong><span id="tomorrow"></span> °F</strong></p>
+                    <p>Day After: <strong><span id="day-after"></span> °F</strong></p>
                 </div>
-                <div id="weather-forecast">
-                    <h3>Weather Forecast</h3>
-                    <div id="forecast-container">
-                        <p>Today: <strong><span id="today"></span> °F</strong></p>
-                        <p>Tomorrow: <strong><span id="tomorrow"></span> °F</strong></p>
-                        <p>Day After: <strong><span id="day-after"></span> °F</strong></p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <ul id="random-business"></ul>
-            </section>
-        </main>
-    </body>
+            </div>
+        </section>
+        <section>
+            <ul id="random-business"></ul>
+        </section>
+    </main>
     <footer>
         <section>
             <p>Olympia Chamber of Commerce</p>
@@ -100,5 +98,4 @@
     </footer>
     <script src="scripts/index.js" defer></script>
 </body>
-
 </html>

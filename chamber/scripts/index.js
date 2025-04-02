@@ -34,6 +34,7 @@ function convertTime(time) {
 // ---------------
 // Weather Section
 // ---------------
+const weatherContainer = document.getElementById("weather-container");
 
 const apiKey = "4db0869447d669fb789e198a2c37899d"; 
 const lat = "47.04483805198912";
@@ -49,9 +50,11 @@ async function getWeather() {
     }
     const data = await response.json();
     console.log(data);
-    const icon = document.getElementById("icon");
+    const icon = document.createElement("img");
     icon.setAttribute("src", `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`)
-    icon.setAttribute("alt", "Weather Icon")
+    icon.setAttribute("alt", "Weather Icon");
+    icon.classList.add("icon");
+    weatherContainer.prepend(icon);
     const temperature = document.getElementById("temperature");
     temperature.textContent = data.main.temp;
     const weatherDesc = document.getElementById("weather-desc");
