@@ -3,10 +3,10 @@ document.getElementById('currentyear').innerText = new Date().getFullYear();
 
 const nav = document.getElementById("nav");
 nav.innerHTML = `
-    <li>Home</li>
-    <li>Directory</li>
-    <li>Join</li>
-    <li>Discover</li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="join.html">Join</a></li>
+    <li><a href="join.html">Discover</a></li>
 `;
 
 const navButton = document.getElementById("nav-button");
