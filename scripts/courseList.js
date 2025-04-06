@@ -95,6 +95,11 @@ const displayList = (courses) => {
     } else {
         button.classList.add("not-completed");
     }
+
+    button.addEventListener("click", function() {
+    displayCourseDetails(course);
+    });
+
     li.appendChild(button);
     courseSection.appendChild(li);
     })
@@ -141,3 +146,23 @@ const navList = document.getElementById("nav-list");
 navButton.addEventListener("click", function() {
     navList.classList.toggle("show");
 })
+
+const courseDetails = document.getElementById("course-details");
+const displayCourseDetails = (course) => {
+    courseDetails.innerHTML = ``; 
+    courseDetails.innerHTML = `
+    <button id="closeModal">X</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+
+    courseDetails.showModal();
+    closeModal.addEventListener("click", function() {
+        courseDetails.close();
+    })
+}
+
