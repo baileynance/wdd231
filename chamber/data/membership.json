@@ -1,0 +1,40 @@
+[
+    {
+        "level": "Non-Profit",
+        "cost": 250,
+        "benefits": [
+            "Monthly newsletters with industry insights",
+            "Discounts on workshops and seminars"
+        ]
+    },
+    {
+        "level": "Bronze",
+        "cost": 500,
+        "benefits": [
+            "Monthly newsletters with industry insights",
+            "Discounts on workshops and seminars",
+            "Recognition in the chamber's annual report"
+        ]
+    },
+    {
+        "level": "Silver",
+        "cost": 1000,
+        "benefits": [
+            "Access to exclusive events and networking opportunities",
+            "Monthly newsletters with industry insights",
+            "Discounts on workshops and seminars",
+            "Recognition in the chamber's annual report"
+        ]
+    },
+    {
+        "level": "Gold",
+        "cost": 2000,
+        "benefits": [
+            "Access to exclusive events and networking opportunities",
+            "Monthly newsletters with industry insights",
+            "Discounts on workshops and seminars",
+            "Priority access to new resources and tools",
+            "Recognition in the chamber's annual report"
+        ]
+    }
+]
