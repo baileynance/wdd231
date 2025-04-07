@@ -33,7 +33,7 @@
     <main>
         <section id="application-form">
             <h2>Membership Application Form</h2>
-            <form method="GET" action="/thank-you.html">
+            <form method="GET" action="thankyou.html">
                 <!-- First Name -->
                 <div>
                     <label for="first-name">First Name
@@ -95,6 +95,9 @@
                         <textarea id="description" name="description" title="Please describe your organization" rows="5"></textarea>
                     </label>
                 </div>
+
+                <!-- Hidden Input -->
+                <input type="hidden" name="formTimestamp" id="formTimestamp">
             
                 <!-- Submit Button -->
                 <button type="submit" id="button">JOIN</button>
@@ -102,24 +105,8 @@
         </section>
         <section id="membership-levels">
             <h2>Membership Levels</h2>
-            <div>
-                <h3>Non Profit Membership Level</h3>
-                <button>Learn More</button>
-            </div>
-            <div>
-                <h3>Bronze Membership Level</h3>
-                <button>Learn More</button>
-            </div>
-            <div>
-                <h3>Silver Membership Level</h3>
-                <button>Learn More</button>
-            </div>
-            <div>
-                <h3>Gold Membership Level</h3>
-                <button>Learn More</button>
-            </div>
-            <dialog id="member-details"></dialog>
         </section>
+        <dialog id="member-details"></dialog>
     </main>
     <footer>
         <section>

@@ -71,119 +71,8 @@ nav a {
 /* ---------------------- */
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-/* Form */
-
-#application-form {
-    margin: 0rem 1rem 1rem 20%;
-}
-
-form {
-    padding: 0rem 1.5rem;
-    background-color: var(--lightred);
-    border: 1px solid var(--black);
-    border-radius: 5px;
-}
-
-form > div {
-    margin: 1rem 0.5rem;
-}
-
-form input[type="text"],
-form input[type="telephone"],
-form input[type="email"],
-form textarea {
-    display: block;
-    width: 100%;
-    border: 1px solid var(--black);
-    border-radius: 4px;
-}
-
-input {
-    padding: 0.2rem;
-    height: 1.5rem;
-}
-
-select {
-    border: 1px solid var(--black);
-    border-radius: 4px;
-    display: block;
-    width: 101%;
-    height: 2rem;
-}
-
-textarea {
-    resize: none;
-}
-
-#button {
-    display: block;
-    width: 98%;
-    margin: 1.5rem 0.5rem;
-    height: 2.5rem;
-    background-color: var(--white);
-    border: 1px solid var(--black);
-    border-radius: 4px;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* Membership Levels */
-
-#membership-levels {
-    display: flex;
-    flex-direction: column;
-}
-
-.membership-details {
     text-align: center;
-    border: 1px solid var(--black);
-    border-radius: 4px;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    width: 80%;
-}
-
-.appear {
-    animation: appear 1s ease-in forwards;
-}
-
-@keyframes appear {
-    0% {
-        transform: translateY(-25%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-dialog {
-    border: 1px solid var(--black);
-    border-radius: 5px;
-    padding: 1rem;
-    background-color: var(--white);
-    box-shadow: 0 0 3rem #777;
-    width: 90%;
-    max-width: 900px;
-}
-
-::backdrop {
-    background-color: rgba(0 0 0 / 0.5);
-}
-
-dialog button {
-    position: absolute;
-    top: 23px;
-    right: 23px;
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--black);
+    margin: 4rem auto;
 }
 
 /* ---------------------- */
@@ -240,28 +129,15 @@ footer section:nth-child(2) {
         flex-direction: column;
     }
 
-    #application-form {
-        margin: 1rem 10%;
-    }
-
-    .membership-details {
-        width: 75%;
-        margin: 1rem auto;
-    }
-
-    #membership-levels h2 {
-        margin-left: 10%;
-    }
-
-    .show {
-        display: flex;
-    }
-
     footer section:nth-child(2) {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0.5rem;
+    }
+
+    .show {
+        display: flex;
     }
 }
 
@@ -286,15 +162,6 @@ footer section:nth-child(2) {
 
     .show {
         display: flex;
-    }
-
-    #aplication-form {
-        margin: 1rem 10%;
-    }
-
-    .membership-details {
-        width: 70%;
-        margin: 1rem auto;
     }
 
     footer section:nth-child(2) {
