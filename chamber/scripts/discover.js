@@ -34,7 +34,7 @@ const displayLocations = (data) => {
         <h2>${title}</h2>
         <div id="image-container">
             <figure>
-                <img src="${image}" alt="${alt}">
+                <img src="${image}" alt="${alt}" loading="lazy">
             </figure>
             <div>
                 <p>${description}</p>

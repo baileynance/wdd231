@@ -88,6 +88,17 @@ h1 {
     padding: 0.5rem;
 }
 
+#discover-container li:hover {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+#discover-container button:hover {
+    color: var(--black);
+    background-color: var(--white);
+}
+
 #discover-container h2 {
     margin: 1rem 0;
 }
@@ -180,6 +191,12 @@ footer section:nth-child(2) {
         flex-direction: column;
     }
 
+    #discover-container li:hover {
+        transition: none;
+        transform: scale(1);
+        opacity: 1;
+    }
+
     footer section:nth-child(2) {
         display: flex;
         flex-direction: column;
@@ -219,6 +236,12 @@ footer section:nth-child(2) {
     #discover-container {
         display: flex;
         flex-direction: column;
+    }
+
+    #discover-container li:hover {
+        transition: none;
+        transform: scale(1);
+        opacity: 1;
     }
 
     #image-container {
