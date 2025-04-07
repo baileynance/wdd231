@@ -24,7 +24,7 @@ p {
     font-family: "Quicksand", sans-serif;
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
 }
@@ -38,10 +38,10 @@ header {
     padding-top: 1rem;
 }
 
-header h1,
 header p {
     color: var(--white);
-    margin-left: 1rem;
+    margin: 2rem;
+    font-size: 1.5rem;
 }
 
 nav {
@@ -70,7 +70,56 @@ nav a {
 /* Main */
 /* ---------------------- */
 
+h1 {
+    margin: 2rem 2%;
+}
 
+#discover-container {
+    display: grid;
+    margin: 1rem 2%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    list-style-type: none;
+}
+
+#discover-container li {
+    background-color: var(--lightgray);
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+#discover-container h2 {
+    margin: 1rem 0;
+}
+
+#image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+#image-container figure {
+    grid-column: 1/2;
+    margin: 0;
+}
+
+#image-container div {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#discover-container button {
+    display: block;
+    width: 100%;
+    height: 1.5rem;
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 10px;
+    margin: 0.5rem 0;
+}
 
 /* ---------------------- */
 /* Footer */
@@ -126,6 +175,11 @@ footer section:nth-child(2) {
         flex-direction: column;
     }
 
+    #discover-container {
+        display: flex;
+        flex-direction: column;
+    }
+
     footer section:nth-child(2) {
         display: flex;
         flex-direction: column;
@@ -160,6 +214,29 @@ footer section:nth-child(2) {
 
     .show {
         display: flex;
+    }
+
+    #discover-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #image-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #image-container figure {
+        display: flex;
+        justify-content: center;
+    }
+
+    #image-container p {
+        margin: 0.5rem 0;
+    }
+
+    #image-container address {
+        margin: 0.5rem 0;
     }
 
     footer section:nth-child(2) {

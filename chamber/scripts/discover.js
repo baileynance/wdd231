@@ -32,15 +32,20 @@ const displayLocations = (data) => {
         let li = document.createElement("li");
         li.innerHTML = `
         <h2>${title}</h2>
-        <div>
+        <div id="image-container">
             <figure>
                 <img src="${image}" alt="${alt}">
-                <figcaption>${description}</figcaption>
             </figure>
-            <address>${address}</address>
+            <div>
+                <p>${description}</p>
+                <address>${address}</address>
+            </div>
         </div>
-        <button><a href="${url}" target="_blank">Learn More</a></button>
+        <button>Learn More</button>
         `;
+        li.querySelector("button").addEventListener("click", () => {
+            window.open(url, "_blank");
+        });
 
         container.appendChild(li);
     });

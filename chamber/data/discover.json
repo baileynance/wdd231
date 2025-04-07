@@ -5,7 +5,7 @@
         "alt": "Percival Landing Park Image",
         "address": "217 Thurston Ave NW, Olympia, WA 98501",
         "description": "Percival Landing is one of Olympia's three waterfront parks and is located on the east side of Budd Bay on the southern most tip of Puget Sound.",
-        "url": "https://olympiawa.gov/city-services/parks/parks-and-trails/percival-landing.aspx"
+        "url": "https://www.olympiawa.gov/services/parks___recreation/percival_landing/index.php"
     },
     {
         "title": "Tolmie State Park",
@@ -13,7 +13,7 @@
         "alt": "Tolmie State Park Image",
         "address": "7730 61st Ave NE, Olympia, WA 98506",
         "description": "Tolmie State Park is a public recreation area covering 154 acres on Nisqually Beach on Puget Sound, eight miles northeast of Olympia, Washington",
-        "url": "https://parks.state.wa.us/549/Tolmie-State-Park"
+        "url": "https://parks.wa.gov/find-parks/state-parks/tolmie-state-park"
     },
     {
         "title": "Capitol Lake",
@@ -21,15 +21,15 @@
         "alt": "Capitol Lake Image",
         "address": "501 5th Avenue SW, Olympia. WA 98501",
         "description": "Capitol Lake is a 3 kilometer long, 260-acre artificial lake at the mouth of Deschutes River in Tumwater/Olympia, Washington.",
-        "url": "https://olympiawa.gov/city-services/parks/parks-and-trails/capitol-lake.aspx"
+        "url": "https://des.wa.gov/about/agency-overview/initiatives/capitol-lake"
     },
     {
         "title": "Millersylvania State Park",
-        "image": "./images/millersylvania-state-park",
+        "image": "./images/millersylvania-state-park.webp",
         "alt": "Millersylvania State Park Image",
         "address": "12245 Tilley Rd SW, Olympia, WA 98512",
         "description": "Millersylvania State Park is a public recreation area located on Deep Lake eight miles south of Olympia, Washington.",
-        "url": "https://parks.state.wa.us/549/Millersylvania-State-Park"
+        "url": "https://parks.wa.gov/find-parks/state-parks/millersylvania-state-park"
     },
     {
         "title": "Rock Candy Mountain Trailhead",
@@ -37,7 +37,7 @@
         "alt": "Rock Candy Mountain Image",
         "address": "10430 Rock Candy Mountain Rd SW, Olympia, WA 98512",
         "description": "Outdoor recreation area featuring kid-friendly hikes and an extensive network of trails for ATVs and overlanding.",
-        "url": "https://www.alltrails.com/trail/us/washington/rock-candy-mountain-trailhead"
+        "url": "https://www.wta.org/go-hiking/hikes/rock-candy-mountain"
     },
     {
         "title": "Evergreen State College",
@@ -53,7 +53,7 @@
         "alt": "Woodard Bay Conservation Area Image",
         "address": "Woodard Bay Conservation Area, Olympia, WA 98506",
         "description": "Woodard Bay Natural Resources Conservation Area is a natural reserve in Olympia, Washington, protected under the Washington Natural Areas Program.",
-        "url": "https://parks.state.wa.us/549/Woodard-Bay-Conservation-Area"
+        "url": "https://www.dnr.wa.gov/WoodardBay"
     },
     {
         "title": "Boston Harbor Marina",
