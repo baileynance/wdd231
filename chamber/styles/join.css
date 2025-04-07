@@ -94,7 +94,7 @@ form > div {
 }
 
 form input[type="text"],
-form input[type="telephone"],
+form input[type="tel"],
 form input[type="email"],
 form textarea {
     display: block;
