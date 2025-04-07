@@ -58,3 +58,24 @@ async function getLocations() {
 }
 
 getLocations();
+
+// Function to display a welcome message based on the last visit
+const messageDiv = document.getElementById('welcome-message');
+let now = new Date();
+let lastVisit = localStorage.getItem('lastVisit');
+if (lastVisit) {
+    let lastDate = new Date(lastVisit);
+    let timeDiff = now - lastDate; // in milliseconds
+    let daysAgo = Math.floor(timeDiff / (1000 * 60 * 60 * 24)); // convert to full days
+    if (daysAgo < 1) {
+        messageDiv.textContent = 'Back so soon! Awesome!';
+    } else if (daysAgo === 1) {
+        messageDiv.textContent = 'You last visited 1 day ago.';
+    } else {
+        messageDiv.textContent = `You last visited ${daysAgo} days ago.`;
+    }
+} else {
+    messageDiv.textContent = 'Welcome! Let us know if you have any questions.';
+}
+// Update last visit
+localStorage.setItem('lastVisit', now.toISOString());
