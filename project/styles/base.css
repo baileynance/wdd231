@@ -186,6 +186,10 @@ dialog {
     max-width: 900px;
 }
 
+dialog p {
+    margin: 1rem 0;
+}
+
 ::backdrop {
     background-color: rgba(0 0 0 / 0.5);
 }

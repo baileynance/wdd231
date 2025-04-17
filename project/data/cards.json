@@ -1,102 +1,122 @@
 [
     {
-        "type": "yugi-oh",
+        "type": "Yugi-Oh",
         "name": "Blue Eyes White Dragon",
-        "image": "./images/blue-eyes-white-dragon.webp"
+        "image": "./images/blue-eyes-white-dragon.webp",
+        "info": "The Blue-Eyes White Dragon is one of the most iconic and powerful monsters in the Yu-Gi-Oh! Trading Card Game (TCG). Known for its high attack power and association with the character Seto Kaiba, this dragon has become a symbol of dominance in the game."
     },
     {
-        "type": "yugi-oh",
+        "type": "Yugi-Oh",
         "name": "Kuriboh",
-        "image": "./images/kuriboh.webp"
+        "image": "./images/kuriboh.webp",
+        "info": "Kuriboh is a fun-loving creature, much like Yugi Muto. Despite its gentle personality, Kuriboh is still useful in battles, even being willing to go up against Blue-Eyes Ultimate Dragon. He has also defended Yugi from Obelisk in Battle City. When ever someone insults him or Yugi for his having low attack points or calling it as a hairball he either becomes fierce to the point of almost charging, or becomes very melancholy."
     },
     {
-        "type": "yugi-oh",
+        "type": "Yugi-Oh",
         "name": "Dark Magician",
-        "image": "./images/dark-magician.webp"
+        "image": "./images/dark-magician.webp",
+        "info": "Dark Magician was created when Mahad fused his ba with Illusion Magician, his ka while fighting Thief King Bakura. The Dark Magician fended off the ghosts and battled Diabound. He then continued to serve the Pharaoh in the form of the Dark Magician."
     },
     {
-        "type": "yugi-oh",
+        "type": "Yugi-Oh",
         "name": "Dark Magician Girl",
-        "image": "./images/dark-magician-girl.webp"
+        "image": "./images/dark-magician-girl.webp",
+        "info": "Dark Magician Girl is a powerful Level 6 Spellcaster monster in Yu-Gi-Oh!. She is the female counterpart of the Dark Magician and is known for her strong spell-based attacks. Her origin story involves being a spirit, the Ka, of a young magician named Mana, who was an apprentice of the priest Mahad in ancient Egypt."
     },
     {
-        "type": "yugi-oh",
+        "type": "Yugi-Oh",
         "name": "Pot of Greed",
-        "image": "./images/pot-of-greed.webp"
+        "image": "./images/pot-of-greed.webp",
+        "info": "In the Yu-Gi-Oh! Trading Card Game, Pot of Greed is a Spell Card that allows the player to draw two cards from their deck. It's a very powerful and popular card, but its high potential to disrupt the game balance has led to it being banned."
     },
     {
-        "type": "pokemon",
+        "type": "Pokemon",
         "name": "Pikachu",
-        "image": "./images/pikachu.webp"
+        "image": "./images/pikachu.webp",
+        "info": "Pikachu is popularly known as the mascot of the Pokémon franchise and one of Nintendo's major mascots. It is also the game mascot of and the player's first Pokémon in Pokémon Yellow and Let's Go, Pikachu!, the player's first Pokémon in Pokémon Rumble Blast and Pokémon Rumble World, and has made numerous appearances on the covers of spin-off games."
     },
     {
-        "type": "pokemon",
+        "type": "Pokemon",
         "name": "Bulbasaur",
-        "image": "./images/bulbasaur.webp"
+        "image": "./images/bulbasaur.webp",
+        "info": "Bulbasaur is a quadrupedal green creature resembling a dinosaur, with a large plant bulb on its back. Bulbasaur is a central character in the Pokémon anime, being one of Ash Ketchum's main Pokémon for the first season, with a different one later being obtained by supporting character May."
     },
     {
-        "type": "pokemon",
+        "type": "Pokemon",
         "name": "Kadabra",
-        "image": "./images/kadabra.webp"
+        "image": "./images/kadabra.webp",
+        "info": "Kadabra is a primarily yellow, slightly humanoid Pokémon with mammalian features. It has two long, pointed ears on top of its head, a red star on its forehead, narrow, deep-set eyes, and wide cheeks leading down to a thin snout. Extending from each side of its snout are two mustache-like tufts of fur; a male will have a longer mustache than a female."
     },
     {
-        "type": "pokemon",
+        "type": "Pokemon",
         "name": "Charizard",
-        "image": "./images/charizard.webp"
+        "image": "./images/charizard.webp",
+        "info": "Charizard evolves from Charmeleon starting at level 36. It is the final form of Charmander. Charizard has three forms: Mega Charizard X, Mega Charizard Y, and Gigantamax Charizard. It can Mega Evolve into Mega Charizard X using the Charizardite X and Mega Charizard Y using the Charizardite Y, and can Gigantamax into Gigantamax Charizard if it has the Gigantamax Factor."
     },
     {
-        "type": "pokemon",
+        "type": "Pokemon",
         "name": "Snorlax",
-        "image": "./images/snorlax.webp"
+        "image": "./images/snorlax.webp",
+        "info": "It devours nearly 900 pounds of food per day. Terrifyingly strong, this Pokémon is the size of a mountain—and moves about as much as one as well. Gigantamax energy has affected stray seeds and even pebbles that got stuck to Snorlax, making them grow to a huge size."
     },
     {
-        "type": "one-piece",
+        "type": "One-Piece",
         "name": "Sanji",
-        "image": "./images/sanji.webp"
+        "image": "./images/sanji.webp",
+        "info": "Black Leg Sanji is the cook of the Straw Hat Pirates and one of the Senior Officers of the Straw Hat Grand Fleet. He is the fifth member of the crew and the fourth to join, doing so at the end of the Baratie Arc."
     },
     {
-        "type": "one-piece",
+        "type": "One-Piece",
         "name": "Zoro",
-        "image": "./images/zoro.webp"
+        "image": "./images/zoro.webp",
+        "info": "Roronoa Zoro, also known as Pirate Hunter Zoro, is the master swordsman and combatant of the Straw Hat Pirates, one of the Senior Officers of the Straw Hat Grand Fleet, and is publicly recognized as the right-hand man and number two of his crew's captain Monkey D. Luffy."
     },
     {
-        "type": "one-piece",
+        "type": "One-Piece",
         "name": "Luffy",
-        "image": "./images/luffy.webp"
+        "image": "./images/luffy.webp",
+        "info": "Monkey D. Luffy, commonly known as Straw Hat Luffy or simply Straw Hat, is the founder and captain of the increasingly infamous and powerful Straw Hat Pirates. He pursues the legendary treasure of the late Gol D. Roger in order to become the new Pirate King."
     },
     {
-        "type": "one-piece",
+        "type": "One-Piece",
         "name": "Shanks",
-        "image": "./images/shanks.webp"
+        "image": "./images/shanks.webp",
+        "info": "Red-Haired Shanks, commonly known as just Red Hair, is the chief of the Red Hair Pirates and one of the Four Emperors that rule over the New World."
     },
     {
-        "type": "one-piece",
+        "type": "One-Piece",
         "name": "Chopper",
-        "image": "./images/chopper.webp"
+        "image": "./images/chopper.webp",
+        "info": "Tony Tony Chopper, also known as Cotton Candy Lover Chopper, is the doctor of the Straw Hat Pirates and one of the Senior Officers of the Straw Hat Grand Fleet. He is the sixth member of the crew and the fifth to join, doing so at the end of the Drum Island Arc."
     },
     {
-        "type": "disney",
+        "type": "Disney",
         "name": "Mufasa",
-        "image": "./images/mufasa.webp"
+        "image": "./images/mufasa.webp",
+        "info": "Mufasa is a major character in Disney's 1994 animated feature film The Lion King. He was a large, powerful lion who is Simba's father and once served as king of the Pride Lands."
     },
     {
-        "type": "disney",
+        "type": "Disney",
         "name": "Mickey",
-        "image": "./images/mickey.webp"
+        "image": "./images/mickey.webp",
+        "info": "Mickey Mouse is an animated cartoon character created by Walt Disney and Ub Iwerks. A cheerful and plucky anthropomorphic mouse, Mickey made his first public appearance in Steamboat Willie, on November 18, 1928."
     },
     {
-        "type": "disney",
+        "type": "Disney",
         "name": "Elsa",
-        "image": "./images/elsa.webp"
+        "image": "./images/elsa.webp",
+        "info": "Elsa, also known as The Snow Queen, is one of the protagonists of the Frozen franchise. Born with the power of ice and snow, Elsa is the firstborn daughter of King Agnarr and Queen Iduna, the older sister of Queen Anna, and the former queen of Arendelle."
     },
     {
-        "type": "disney",
+        "type": "Disney",
         "name": "Stitch",
-        "image": "./images/stitch.webp"
+        "image": "./images/stitch.webp",
+        "info": "Stitch, originally named Experiment 626, is one of the titular protagonists of the Lilo & Stitch franchise. He is an illegal genetic experiment created by the mad scientist Dr. Jumba Jookiba. Designed to be abnormally strong, virtually indestructible and super-intelligent."
     },
     {
-        "type": "disney",
+        "type": "Disney",
         "name": "Pooh",
-        "image": "./images/pooh.webp"
+        "image": "./images/pooh.webp",
+        "info": "Winnie the Pooh (or Pooh for short) is the titular protagonist of the franchise of the same name. He is an anthropomorphic teddy bear who debuted in Disney's 1966 short Winnie the Pooh and the Honey Tree."
     }
 ]

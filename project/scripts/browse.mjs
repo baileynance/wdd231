@@ -61,7 +61,8 @@ const displayCards = (data) => {
             cardDetails.innerHTML = `
             <button id="closeModal">X</button>
             <h3>${card.name}</h3>
-            <p>Type: <span>${card.type}</span></p>
+            <p><strong>Type</strong>: ${card.type}</p>
+            <p><strong>Details</strong>: ${card.info}</p>
             `;
             cardDetails.showModal();
             closeModal.addEventListener("click", function() {
@@ -77,13 +78,13 @@ const sort = document.getElementById("sort");
 sort.addEventListener("change", function(e) {
     const input = e.target.value;
     if (input == "disney") {
-        filteredData = cardData.filter(card => card.type == "disney");
+        filteredData = cardData.filter(card => card.type == "Disney");
     } else if (input == "one-piece") {
-        filteredData = cardData.filter(card => card.type == "one-piece");
+        filteredData = cardData.filter(card => card.type == "One-Piece");
     } else if (input == "yugi-oh") {
-        filteredData = cardData.filter(card => card.type == "yugi-oh");
+        filteredData = cardData.filter(card => card.type == "Yugi-Oh");
     } else if (input == "pokemon") {
-        filteredData = cardData.filter(card => card.type == "pokemon");
+        filteredData = cardData.filter(card => card.type == "Pokemon");
     }
     displayCards(filteredData);
 })
