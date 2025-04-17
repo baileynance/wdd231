@@ -1,7 +1,7 @@
 :root {
-    --red: #780116;
-    --orange: #DB7C26;
-    --blue: #F7B538;
+    --purple: #37247a;
+    --darkpurple: #170c3b;
+    --blue: #a4caff;
     --black: #140004;
     --white: #ffffff;
     --heading: "Boldonse";
@@ -24,21 +24,21 @@ body {
     height: 5rem;
 }
 
-#red {
+#purple {
     border: solid 2px var(--black);
-    background-color: var(--red);
+    background-color: var(--purple);
     padding: 1rem;
     margin: 0.5rem 2rem 0.5rem 2rem;
 }
 
-#orange {
+#darkpurple {
     border: solid 2px var(--black);
-    background-color: var(--orange);
+    background-color: var(--darkpurple);
     padding: 1rem;
     margin: 0.5rem 2rem 0.5rem 2rem;
 }
 
-#yellow {
+#blue {
     border: solid 2px var(--black);
     background-color: var(--blue);
     padding: 1rem;
