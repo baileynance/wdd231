@@ -1,0 +1,397 @@
+/* ------------------------------------------------- */
+/* Base */
+/* ------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red: #780116;
+    --orange: #DB7C26;
+    --yellow: #F7B538;
+    --black: #140004;
+    --white: #ffffff;
+    --heading: "Boldonse";
+    --paragraph: "Roboto Condensed";
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+/* For Desktop */
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* Header */
+/* ------------------------------------------------- */
+
+header {
+    background: var(--red);
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+#logo {
+    height: 5rem;
+    width: auto;
+}
+
+header h1 {
+    color: var(--white);
+    margin-left: 1rem;
+}
+
+#welcome {
+    right: 1rem;
+    position: absolute;
+    top: 1rem;
+    color: var(--white);
+}
+
+#clear {
+    background-color: var(--black);
+    color: var(--white);
+    text-decoration: none;
+}
+
+header nav {
+    display: block;
+    background-color: var(--black);
+    padding: 1rem;
+}
+
+#nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+#nav-list li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+#nav-list li a:hover {
+    color: var(--yellow);
+}
+
+/* ------------------------------------------------- */
+/* Home */
+/* ------------------------------------------------- */
+
+.home h2 {
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 1400px;
+    object-fit: cover;
+    margin-bottom: 3rem;
+}
+
+#trending, #most-popular {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 5%;
+    list-style: none;
+    text-align: center;
+}
+
+#trending img,
+#most-popular img {
+    max-width: 250px;
+    width: 100%;
+}
+
+/* ------------------------------------------------- */
+/* Browse */
+/* ------------------------------------------------- */
+
+.browse h2,
+.browse label {
+    margin: 1rem 6%;
+}
+
+#card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 5%;
+    list-style: none;
+}
+
+#card-list li {
+    padding: 1rem;
+}
+
+#card-list li:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+#card-list li img {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* ------------------------------------------------- */
+/* Generate */
+/* ------------------------------------------------- */
+
+.generate-title {
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.generate-title button {
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+}
+
+#random-anime {
+    margin: 1rem auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+#random-anime div {
+    display: flex;
+    flex-direction: column;
+}
+
+#random-anime p, #randim-anime h3 {
+    margin: 0.5rem 0;
+}
+
+#random-anime img {
+    max-width: 250px;
+    width: 100%;
+    grid-column: 2/3;
+}
+
+/* ------------------------------------------------- */
+/* Join */
+/* ------------------------------------------------- */
+
+.join h2 {
+    margin: 1.5rem 20% 1rem 20%;
+}
+
+#form {
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    background-color: var(--yellow);
+    margin: 1rem 20% 2rem 20%;
+}
+
+#form label {
+    color: var(--black);
+}
+
+#form input{
+    display: block;
+    width: 98%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 0.2rem;
+}
+
+#form div {
+    margin: 1rem;
+}
+
+#form button {
+    display: block;
+    width: 96%;
+    margin: 1.5rem auto;
+    height: 2rem;
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    color: var(--white);
+}
+
+#button:active {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* ------------------------------------------------- */
+/* Footer */
+/* ------------------------------------------------- */
+
+footer {
+    background-color: var(--red);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer div a {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+}
+
+footer div p, footer div a {
+    margin: 0.8rem 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+/* For Tablet */
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1025px) {
+    nav {
+        display: flex;
+    }
+
+    /* Generate */
+
+    #random-anime {
+        width: 80%;
+    }
+
+    #random-anime img {
+        max-width: 250px;
+    }
+
+    /* Browse */
+
+    .browse h2, 
+    .browse label {
+        margin: 1rem 8%;
+    }
+
+    #card-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 1rem 7%;
+        list-style: none;
+    }
+
+    /* Join */
+
+    .join h2 {
+        margin: 1.5rem 15% 1rem 15%;
+    }
+
+    #form {
+        margin: 1rem 15% 2rem 15%;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+/* For Mobile */
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 640px) {
+    
+    header div {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    header div h1 {
+        margin: 1rem 0 0.5rem 0;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 1rem;
+    }
+
+    /* Index */
+
+    #trending,
+    #most-popular {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 10%;
+        list-style: none;
+        text-align: center;
+    }
+
+    #trending img,
+    #most-popular img {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    /* Generate */
+
+    #random-anime {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #random-anime img {
+        display: flex;
+        justify-self: center;
+        max-width: 500px;
+    }
+
+    /* Browse */
+
+    .browse h2,
+    .browse label {
+        margin: 1rem 11%;
+    }
+
+    #card-list {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 10%;
+        list-style: none;
+    }
+
+    /* Join */
+
+    .join h2 {
+        margin: 1.5rem 10% 1rem 10%;
+    }
+
+    #form {
+        margin: 1rem 10% 2rem 10%;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,102 @@
+[
+    {
+        "type": "yugi-oh",
+        "name": "Blue Eyes White Dragon",
+        "image": "./images/blue-eyes-white-dragon.webp"
+    },
+    {
+        "type": "yugi-oh",
+        "name": "Kuriboh",
+        "image": "./images/kuriboh.webp"
+    },
+    {
+        "type": "yugi-oh",
+        "name": "Dark Magician",
+        "image": "./images/dark-magician.webp"
+    },
+    {
+        "type": "yugi-oh",
+        "name": "Dark Magician Girl",
+        "image": "./images/dark-magician-girl.webp"
+    },
+    {
+        "type": "yugi-oh",
+        "name": "Pot of Greed",
+        "image": "./images/pot-of-greed.webp"
+    },
+    {
+        "type": "pokemon",
+        "name": "Pikachu",
+        "image": "./images/pikachu.webp"
+    },
+    {
+        "type": "pokemon",
+        "name": "Bulbasaur",
+        "image": "./images/bulbasaur.webp"
+    },
+    {
+        "type": "pokemon",
+        "name": "Kadabra",
+        "image": "./images/kadabra.webp"
+    },
+    {
+        "type": "pokemon",
+        "name": "Charizard",
+        "image": "./images/charizard.webp"
+    },
+    {
+        "type": "pokemon",
+        "name": "Snorlax",
+        "image": "./images/snorlax.webp"
+    },
+    {
+        "type": "one-piece",
+        "name": "Sanji",
+        "image": "./images/sanji.webp"
+    },
+    {
+        "type": "one-piece",
+        "name": "Zoro",
+        "image": "./images/zoro.webp"
+    },
+    {
+        "type": "one-piece",
+        "name": "Luffy",
+        "image": "./images/luffy.webp"
+    },
+    {
+        "type": "one-piece",
+        "name": "Shanks",
+        "image": "./images/shanks.webp"
+    },
+    {
+        "type": "one-piece",
+        "name": "Chopper",
+        "image": "./images/chopper.webp"
+    },
+    {
+        "type": "disney",
+        "name": "Mufasa",
+        "image": "./images/mufasa.webp"
+    },
+    {
+        "type": "disney",
+        "name": "Mickey",
+        "image": "./images/mickey.webp"
+    },
+    {
+        "type": "disney",
+        "name": "Elsa",
+        "image": "./images/elsa.webp"
+    },
+    {
+        "type": "disney",
+        "name": "Stitch",
+        "image": "./images/stitch.webp"
+    },
+    {
+        "type": "disney",
+        "name": "Pooh",
+        "image": "./images/pooh.webp"
+    }
+]

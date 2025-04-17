@@ -1,0 +1,73 @@
+:root {
+    --red: #780116;
+    --orange: #DB7C26;
+    --yellow: #F7B538;
+    --black: #140004;
+    --white: #ffffff;
+    --heading: "Boldonse";
+    --paragraph: "Roboto Condensed";
+}
+
+h1, h2, h3 {
+    font-family: var(--heading), "sans-serif";
+}
+
+p {
+    font-family: var(--paragraph), "sans-serif";
+}
+
+body {
+    text-align: center;
+}
+
+#logo {
+    height: 5rem;
+}
+
+#red {
+    border: solid 2px var(--black);
+    background-color: var(--red);
+    padding: 1rem;
+    margin: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#orange {
+    border: solid 2px var(--black);
+    background-color: var(--orange);
+    padding: 1rem;
+    margin: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#yellow {
+    border: solid 2px var(--black);
+    background-color: var(--yellow);
+    padding: 1rem;
+    margin: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#black {
+    border: solid 2px var(--black);
+    background-color: var(--black);
+    padding: 1rem;
+    margin: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#white {
+    border: solid 2px var(--black);
+    background-color: var(--white);
+    padding: 1rem;
+    margin: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#heading {
+    font-family: var(--heading);
+}
+
+#paragraph {
+    font-family: var(--paragraph);
+}
+
+.wireframe {
+    height: 25rem;
+    margin: 0.5rem 1rem;
+}
