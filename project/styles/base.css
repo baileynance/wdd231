@@ -79,7 +79,7 @@ header nav {
 }
 
 #nav-list li a:hover {
-    color: rgb(198, 198, 198);
+    color: rgb(122, 122, 122);
 }
 
 /* ------------------------------------------------- */
@@ -144,6 +144,11 @@ header nav {
 .browse h2,
 .browse label {
     margin: 1rem 6%;
+}
+
+.favorite-star button {
+    all: unset;
+    cursor: pointer;
 }
 
 #card-list {

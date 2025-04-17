@@ -23,9 +23,33 @@ const displayCards = (data) => {
     data.forEach(card => {
         let li = document.createElement("li");
         li.innerHTML = `
-        <h3>${card.name}</h3>
+        <h3>${card.name} <span class="favorite-star"><button class="favorite-button">&#9734;</button></span></h3>
         <img src="${card.image}" alt="${card.name} Image" loading="lazy">
         `;
+
+        const button = li.querySelector(".favorite-button");
+        button.addEventListener("click", (e) => {
+            const star = e.target.textContent;
+            let data = localStorage.getItem("favorite-list");
+            if (data) {
+              data = JSON.parse(data);
+            } 
+
+            if (star === "☆") {
+                e.target.textContent = "★";
+                if (data !== null) {
+                    data.push(card.name);
+                    localStorage.setItem("favorite-list", data);
+                }
+            } else if (star === "★") {
+                e.target.textContent = "☆";
+                if (data !== null) {
+                    data = data.filter(name => name !== card.name);
+                    localStorage.setItem("favorite-list", data);
+                }
+            }
+        })
+        
         cardList.appendChild(li);
     })
 }
