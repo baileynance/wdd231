@@ -23,7 +23,7 @@ async function getCards() {
 
 const displayPokemon = (data) => {
     const pokemon = document.getElementById("pokemon");
-    let pokemonCards = data.filter(card => card.type == "pokemon");
+    let pokemonCards = data.filter(card => card.type == "Pokemon");
     pokemonCards = pokemonCards.sort(() => 0.5 - Math.random());
     pokemonCards = pokemonCards.slice(0, 3);
     pokemonCards.forEach(card => {
@@ -38,7 +38,7 @@ const displayPokemon = (data) => {
 
 const displayYugiOh = (data) => {
     const yugiOh = document.getElementById("yugi-oh");
-    let yugiOhCards = data.filter(card => card.type == "yugi-oh");
+    let yugiOhCards = data.filter(card => card.type == "Yugi-Oh");
     yugiOhCards = yugiOhCards.sort(() => 0.5 - Math.random());
     yugiOhCards = yugiOhCards.slice(0, 3);
     yugiOhCards.forEach(card => {
@@ -53,7 +53,7 @@ const displayYugiOh = (data) => {
 
 const displayOnePiece = (data) => {
     const onePiece = document.getElementById("one-piece");
-    let onePieceCards = data.filter(card => card.type == "one-piece");
+    let onePieceCards = data.filter(card => card.type == "One-Piece");
     onePieceCards = onePieceCards.sort(() => 0.5 - Math.random());
     onePieceCards = onePieceCards.slice(0, 3);
     onePieceCards.forEach(card => {
@@ -68,7 +68,7 @@ const displayOnePiece = (data) => {
 
 const displayDisney = (data) => {
     const disney = document.getElementById("disney");
-    let disneyCards = data.filter(card => card.type == "disney");
+    let disneyCards = data.filter(card => card.type == "Disney");
     disneyCards = disneyCards.sort(() => 0.5 - Math.random());
     disneyCards = disneyCards.slice(0, 3);
     disneyCards.forEach(card => {
