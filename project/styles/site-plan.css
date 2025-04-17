@@ -1,7 +1,7 @@
 :root {
     --red: #780116;
     --orange: #DB7C26;
-    --yellow: #F7B538;
+    --blue: #F7B538;
     --black: #140004;
     --white: #ffffff;
     --heading: "Boldonse";
@@ -40,7 +40,7 @@ body {
 
 #yellow {
     border: solid 2px var(--black);
-    background-color: var(--yellow);
+    background-color: var(--blue);
     padding: 1rem;
     margin: 0.5rem 2rem 0.5rem 2rem;
 }

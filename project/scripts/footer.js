@@ -4,7 +4,7 @@ const createFooter = () => {
     footer.innerHTML = `
         <div>
             <p>&copy; <span id="currentyear"></span> Bailey Nance</p>
-            <p>WDD 131 - Project</p>
+            <p>WDD 231 - Project</p>
             <p>All rights reserved. Privacy Policy</p>
         </div>
         <div>

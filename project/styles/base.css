@@ -8,9 +8,9 @@
 }
 
 :root {
-    --red: #780116;
-    --orange: #DB7C26;
-    --yellow: #F7B538;
+    --purple: #826ad8;
+    --darkpurple: #1c1045;
+    --blue: #a4caff;
     --black: #140004;
     --white: #ffffff;
     --heading: "Boldonse";
@@ -28,7 +28,7 @@
 /* ------------------------------------------------- */
 
 header {
-    background: var(--red);
+    background: var(--purple);
 }
 
 header div {
@@ -62,7 +62,7 @@ header h1 {
 
 header nav {
     display: block;
-    background-color: var(--black);
+    background-color: var(--darkpurple);
     padding: 1rem;
 }
 
@@ -79,7 +79,7 @@ header nav {
 }
 
 #nav-list li a:hover {
-    color: var(--yellow);
+    color: rgb(198, 198, 198);
 }
 
 /* ------------------------------------------------- */
@@ -88,16 +88,39 @@ header nav {
 
 .home h2 {
     text-align: center;
+    font-size: 2rem;
+    margin-top: 4rem;
 }
 
-.hero-image {
+.hero-image img {
     width: 100%;
     max-width: 1400px;
     object-fit: cover;
-    margin-bottom: 3rem;
+    margin-top: -1.2rem;
+    position: relative;
 }
 
-#trending, #most-popular {
+.hero-button {
+    position: absolute;
+    top: 80%;
+    left: 46%;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 5px;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.hero-button {
+    box-shadow: 0 0 32px rgba(255, 255, 255, 0.5);
+}
+
+.hero-button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#pokemon, #yugi-oh, #one-piece, #disney {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -106,8 +129,10 @@ header nav {
     text-align: center;
 }
 
-#trending img,
-#most-popular img {
+#pokemon img,
+#yugi-oh img,
+#one-piece img,
+#disney img {
     max-width: 250px;
     width: 100%;
 }
@@ -197,7 +222,7 @@ header nav {
 #form {
     border: 1px solid var(--black);
     border-radius: 10px;
-    background-color: var(--yellow);
+    background-color: var(--blue);
     margin: 1rem 20% 2rem 20%;
 }
 
@@ -238,11 +263,12 @@ header nav {
 /* ------------------------------------------------- */
 
 footer {
-    background-color: var(--red);
+    background-color: var(--purple);
     color: var(--white);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem;
+    margin-top: 4rem;
 }
 
 footer div {
@@ -268,6 +294,11 @@ footer div p, footer div a {
 @media screen and (max-width: 1025px) {
     nav {
         display: flex;
+    }
+
+    /* Index */
+    .hero-button {
+        left: 44%;
     }
 
     /* Generate */
@@ -336,8 +367,10 @@ footer div p, footer div a {
 
     /* Index */
 
-    #trending,
-    #most-popular {
+    #pokemon,
+    #yugi-oh,
+    #one-piece,
+    #disney {
         display: flex;
         flex-direction: column;
         margin: 2rem 10%;
@@ -345,10 +378,16 @@ footer div p, footer div a {
         text-align: center;
     }
 
-    #trending img,
-    #most-popular img {
+    #pokemon img,
+    #yugi-oh img,
+    #one-piece img,
+    #disney img {
         max-width: 400px;
         width: 100%;
+    }
+
+    .hero-button {
+        left: 45%;
     }
 
     /* Generate */

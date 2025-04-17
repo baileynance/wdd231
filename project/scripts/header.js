@@ -3,15 +3,15 @@ const header = document.querySelector("header");
 const createHeader = () => {
     header.innerHTML = `
     <div>
-        <img id="logo" src="images/R.png" alt="Randimé Logo">
-        <h1>Randimé</h1>
+        <img id="logo" src="images/K.png" alt="Kard Kol Logo">
+        <h1>Kard Kol</h1>
         <div id="welcome"></div>
     </div>
     <nav id="header-nav">
         <ul id="nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="browse.html">Browse</a></li>
-            <li><a href="generate.html">Generate</a></li>
+            <li><a href="favorite.html">Favorites</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>

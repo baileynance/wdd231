@@ -24,7 +24,7 @@ const displayCards = (data) => {
         let li = document.createElement("li");
         li.innerHTML = `
         <h3>${card.name}</h3>
-        <img src="${card.image}" alt="${card.name} Image">
+        <img src="${card.image}" alt="${card.name} Image" loading="lazy">
         `;
         cardList.appendChild(li);
     })
