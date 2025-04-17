@@ -32,21 +32,25 @@ const displayCards = (data) => {
             const star = e.target.textContent;
             let data = localStorage.getItem("favorite-list");
             if (data) {
-              data = JSON.parse(data);
-            } 
+                data = JSON.parse(data);
+            }
 
             if (star === "☆") {
                 e.target.textContent = "★";
                 if (data !== null) {
                     data.push(card.name);
-                    localStorage.setItem("favorite-list", data);
+                    localStorage.setItem("favorite-list", JSON.stringify(data));
+                } else {
+                    const singleItem = card.name;
+                    const list = [singleItem];
+                    localStorage.setItem("favorite-list", JSON.stringify(list));
                 }
             } else if (star === "★") {
                 e.target.textContent = "☆";
                 if (data !== null) {
                     data = data.filter(name => name !== card.name);
-                    localStorage.setItem("favorite-list", data);
-                }
+                    localStorage.setItem("favorite-list", JSON.stringify(data));
+                } 
             }
         })
         

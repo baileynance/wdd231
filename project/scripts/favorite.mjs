@@ -5,31 +5,43 @@ createHeader();
 createFooter();
 welcomeMessage();
 
-let animeData = [];
-
-async function getAnime() {
-    const response = await fetch("./data/anime.json");
+async function getCards() {
+    const response = await fetch("./data/cards.json");
     const data = await response.json();
-    animeData = data;
+    displayCards(data);
 }
 
-getAnime();
+const favorites = document.getElementById("favorites");
+const displayCards = (data) => {
+    favorites.innerHTML = "";
+    let list = localStorage.getItem("favorite-list");
+    if (list) {
+        list = JSON.parse(list);
+        data.forEach(card => {
+            if (list.includes(card.name)) {
+                const li = document.createElement("li");
+                li.innerHTML = `
+                <h3>${card.name} <span><button class="remove-favorite">-</button></span></h3>
+                <img src="${card.image}" alt="${card.name} Image" loading="lazy">
+                `;
 
-// Button for Generator
-const random = document.getElementById("random-anime");
-const button = document.getElementById("random-button");
-button.addEventListener("click", function() {
-    const randomIndex = Math.floor(Math.random() * animeData.length);
-    const randomItem = animeData[randomIndex];
-    random.innerHTML = "";
-    random.innerHTML = `
-        <div>
-            <h3>${randomItem.name}</h3>
-            <p>${randomItem.rating} &starf;</p>
-            <p>${randomItem.seasons} Season(s)</p>
-            <p>${randomItem.episodes} Episodes</p>
-            <p>${randomItem.synopsis}</p>
-        </div>
-        <a href="${randomItem.url}" target="_blank" loading="lazy"><img src="${randomItem.image}" alt="${randomItem.alt}"></a>
-    `;
-});
+                const button = li.querySelector(".remove-favorite");
+                button.addEventListener("click", () => {
+                    list = list.filter(name => name !== card.name);
+                    localStorage.setItem("favorite-list", JSON.stringify(list));
+                    getCards();
+                })
+
+                favorites.appendChild(li);
+            }
+        });
+    }
+}
+
+const deleteFavorites = document.getElementById("delete-favorites");
+deleteFavorites.addEventListener("click", function() {
+    localStorage.clear();
+    getCards();
+})
+
+getCards();

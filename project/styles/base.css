@@ -175,42 +175,49 @@ header nav {
 }
 
 /* ------------------------------------------------- */
-/* Generate */
+/* Favorite */
 /* ------------------------------------------------- */
 
-.generate-title {
+.favorite-title {
     margin: 3rem auto;
     text-align: center;
 }
 
-.generate-title button {
+#delete-favorites {
     background-color: var(--black);
     color: var(--white);
-    border: 1px solid var(--black);
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    margin: 1rem auto;
+    border-radius: 5px;
+    display: flex;
+    justify-self: center;
+    padding: 0.5rem;
 }
 
-#random-anime {
+.remove-favorite {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+#favorites {
     margin: 1rem auto;
     width: 60%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin-bottom: 3rem;
+    list-style-type: none;
 }
 
-#random-anime div {
+#favorites div {
     display: flex;
     flex-direction: column;
 }
 
-#random-anime p, #randim-anime h3 {
+#favorites p, #favorites h3 {
     margin: 0.5rem 0;
 }
 
-#random-anime img {
+#favorites img {
     max-width: 250px;
     width: 100%;
     grid-column: 2/3;
@@ -306,13 +313,13 @@ footer div p, footer div a {
         left: 44%;
     }
 
-    /* Generate */
+    /* Favorite */
 
-    #random-anime {
+    #favorites {
         width: 80%;
     }
 
-    #random-anime img {
+    #favorites img {
         max-width: 250px;
     }
 
@@ -395,15 +402,15 @@ footer div p, footer div a {
         left: 45%;
     }
 
-    /* Generate */
+    /* Favorite */
 
-    #random-anime {
+    #favorites {
         width: 80%;
         display: flex;
         flex-direction: column;
     }
 
-    #random-anime img {
+    #favorites img {
         display: flex;
         justify-self: center;
         max-width: 500px;
