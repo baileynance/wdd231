@@ -6,12 +6,19 @@ createFooter();
 welcomeMessage();
 
 async function getCards() {
-    const response = await fetch("./data/cards.json");
-    const data = await response.json();
-    displayPokemon(data);
-    displayYugiOh(data);
-    displayOnePiece(data);
-    displayDisney(data);
+    try {
+        const response = await fetch("./data/cards.json");
+        const data = await response.json();
+        displayPokemon(data);
+        displayYugiOh(data);
+        displayOnePiece(data);
+        displayDisney(data);
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+    } catch (error) {
+        console.error('Something went wrong:', error);
+    }
 }
 
 const displayPokemon = (data) => {

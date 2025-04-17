@@ -146,7 +146,7 @@ header nav {
     margin: 1rem 6%;
 }
 
-.favorite-star button {
+.favorite-star button, .no-show {
     all: unset;
     cursor: pointer;
 }
@@ -172,6 +172,30 @@ header nav {
 #card-list li img {
     max-width: 500px;
     width: 100%;
+}
+
+dialog {
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: var(--white);
+    box-shadow: 0 0 3rem #777;
+    margin: auto;
+    width: 90%;
+    height: 30%;
+    max-width: 900px;
+}
+
+::backdrop {
+    background-color: rgba(0 0 0 / 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--black);
 }
 
 /* ------------------------------------------------- */

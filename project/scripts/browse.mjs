@@ -23,7 +23,7 @@ const displayCards = (data) => {
     data.forEach(card => {
         let li = document.createElement("li");
         li.innerHTML = `
-        <h3>${card.name} <span class="favorite-star"><button class="favorite-button">&#9734;</button></span></h3>
+        <h3>${card.name} <span class="favorite-star"><button class="favorite-button">&#9734;</button> <button class="no-show">&#x2b;</button></span></h3>
         <img src="${card.image}" alt="${card.name} Image" loading="lazy">
         `;
 
@@ -53,7 +53,22 @@ const displayCards = (data) => {
                 } 
             }
         })
-        
+
+        const cardDetails = document.getElementById("card-details");
+        const dialog = li.querySelector(".no-show");
+        dialog.addEventListener("click", () => {
+            cardDetails.innerHTML = "";
+            cardDetails.innerHTML = `
+            <button id="closeModal">X</button>
+            <h3>${card.name}</h3>
+            <p>Type: <span>${card.type}</span></p>
+            `;
+            cardDetails.showModal();
+            closeModal.addEventListener("click", function() {
+                cardDetails.close();
+            })
+        })
+
         cardList.appendChild(li);
     })
 }
